@@ -1,0 +1,82 @@
+@@include('components/header.html')    <main class="wrapper">
+        @@include('components/carousel.html')
+        <div class="block__info">
+            <h3>Облачный кондиционер Daichi Alpha A20AVQR3_1Y/A20FVR3_1Y + 1 год подписки</h3>
+            <div class="icons__icon">
+                <svg class="icon">
+                    <use xlink:href="#fav"></use>
+                </svg>
+                <span>В избранное</span>
+            </div>
+            <div class="block__desc">
+                <div class="properties">
+                    <h5>Характеристики</h5>
+                    <p><span>Бренд</span><span>DAIKIN</span></p>
+                    <p><span>Серия</span><span>Sensira</span></p>
+                    <p><span>Инверторные</span><span>Да</span></p>
+                    <p><span>Потребляемая мощность, охлаждение, кВт</span><span>1,5~1,27~0,31</span></p>
+                    <p><span>Класс энергоэффективности, охлаждение</span><span>A</span></p>
+                    <p><span>Холодопроизводительность, кВт, макс.</span><span>4,3</span></p>
+                    <p><span>Теплопроизводительность, кВт, макс.</span><span>5</span></p>
+                    <p><span>Гарантия</span><span>3 года</span></p>
+                </div>
+                <div class="block__price">
+                    <div class="price">13 572 ₽</div>
+                    <a data-fancybox href="#hidden" class="price__btn">
+                        <img src="imgs/icon_btn.png">
+                        <div class="price__btn-box">
+                            <h5>Нашли дешевле?</h5>
+                            <p>Сообщите нам и мы снизим цену!</p>
+                        </div>
+                        <svg class="arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            @@include('components/accordion.html')
+        </div>
+    </main>
+
+    <div style="display: none; width: 500px;" id="hidden">
+        <div class="modal_header">
+            <div class="modal__info">
+                <img class="logo" src="imgs/logo.png">
+                <h2 class="form__title">Нашли дешевле?<span>Снизим цену!</span></h2>
+            </div>
+            <img class="modal__desc" src="imgs/modal_desc.png">
+        </div>
+        <div class="form__box">
+            <p class="form__box-info">Если у конкурента цена ниже — вернём разницу! Отправьте ссылку на альтернативное
+                предложение и получите товар по привлекательной цене.</p>
+            @@include('components/form.html')
+            <p class="form__box-police">Нажимая на кнопку, вы соглашаетесь с нашей <a href="javascript://">политикой
+                    конфиденциальности</a></p>
+        </div>
+    </div>
+
+    <div style="display: none; width: 500px;" id="hidden_success" class="hidden_success">
+        <div class="modal__success">
+            <img src="imgs/call.png">
+            <h2>Спасибо!</h2>
+            <p>В скором времени наш менеджер обязательно с вами свяжется.</p>
+            @@include('components/button.html')
+        </div>
+    </div>
+
+
+    <!-- Скрытый SVG-спрайт -->
+    <svg class="hidden" width="0" height="0">
+        <!-- Иконка в Избранное в SVG-спрайте-->
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="fav">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <!-- Иконка arrow в SVG-спрайте-->
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" id="arrow">
+            <path d="M10 16.5L14 12.5L10 8.5" stroke="#6C7684" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </symbol>
+    </svg>
+@@include('components/footer.html')
